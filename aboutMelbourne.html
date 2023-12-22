@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>About Melbourne</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+   
+    
+  </head>
+  <body>
+    <div id="box">
+    
+		<header>
+            <h1>The City Walk Tour</h1>
+    </header>
+      <div class = box2>
+              <nav id="mainnav">
+                <ul>
+                    <li><img class="homeimg" src="images/pi-chan.jpg" width="75" height="75" alt="" title="" /><a href="index.html">Home</a></li>
+                    <li><img src="images/ruru-kun.jpg" width="55" height="55" alt="" title="" /><a href="aboutmelbourne.html">City Walk</a></li>
+                    <li><img src="images/kimi-chan.jpg" width="55" height="55" alt="" title="" /><a href="animals.html">Animals</a></li>
+                    <li><img src="images/pipipi.jpg" width="55" height="55" alt="" title="" /><a href="booking.html">Book Tour</a></li>
+                </ul>
+              </nav>
+    
+          <article id="content">
+
+              <div id="boxgrid">
+                <div class="grid-item"><img src="images/IMG_0041.JPG" width="255" height="150" alt="picture of Melbourne" title="" /></div>
+                <div class="grid-item"><img src="images/library.jpeg" width="255" height="150" alt="picture of Melbourne" title="" /></div>
+                <div class="grid-item"><img src="images/IMG_0047.JPG" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+                <div class="grid-item"><img src="images/IMG_0040.JPG" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+                <div class="grid-item"><img src="images/IMG_0045.WEBP" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+                <div class="grid-item"><img src="images/mcgAerial.jpeg" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+                <div class="grid-item"><img src="images/ptrk.jpeg" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+                <div class="grid-item"><img src="images/royalbuilding.jpeg" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+                <div class="grid-item"><img src="images/federation.jpeg" width="255" height="150" alt="picture of Melbourne" title="" /></div>  
+              </div>
+
+                <article class = "jsondata">
+                  <h2>~ The Most Livable City ~</h2>
+                  <h1 id="json1"></h1>
+                  <h2>＊＊＊＊＊＊＊＊＊＊＊＊＊＊ </h2>
+                  <h1 id="json2"></h1>
+                  <script>
+                  var myObj, x = "";
+                  myObj = {
+                    "country":"Australia",
+                    "city": "Melbourne",
+                    "popular":[ "Cafe", "Iconic Architecture", "Art" ]
+                  };
+                  
+                  document.getElementById("json1").innerHTML = myObj.country + " " + myObj.city;
+                  
+                  for (i = 0; i < myObj.popular.length; i++) {
+                  x = x + "--" + myObj.popular[i] + "--";
+                  }
+                  document.getElementById("json2").innerHTML = x;
+                  </script>
+                  
+                </article> 
+                <table class = "itinerarytable">
+                    <tr>
+                      <th>Time</th><th>Itinerary</th>
+                    </tr>
+                    <tr>
+                      <td class = "tablecolumn1">13:00 </td>
+                      <td>Description
+                      Meeting point at Melbourne Town Hall</br>
+                      </br>
+                    Adress: 90/130 Swanston St, Melbourne VIC 3000</br>
+                      Getting on the free tram from Flinders station</br>
+                      </br>
+                      Carton Garden and Royal Exhibition Building</br>
+                      St Patrick Cathedral</br>
+                      Parliament</br>
+                      Victoria State Libraly</br>
+                      </td>
+                    </tr>
+                    <tr>
+                    <td class = "tablecolumn1">14:00</td>
+                    <td>Royal Arcade and Block Arcade</br>
+                      Dukes Coffee Roasters</br>
+                      Degraves Street</br>
+                      Pidapipo Gelateria</br>
+                      St Pole Cathedral</br>
+                      Hosier Lane</br>
+                      Federation Square</br>
+                      Koorie Heritage Trust</br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class = "tablecolumn1">15:00<td>End Point at National Gallery of Victoria </td>
+                    </tr>
+                
+                  </table>
+
+                  <table class = "itinerarytable2">
+                  <tr>
+                    <td class = "fortable2">Minimum number of people</td><td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Pick Up</td><td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>What's Included</td><td>Japanese Tour Guide</td>
+                  </tr>
+                  
+                  </table>
+                  <div class = "bookingcountainer">
+                    <button class = "makebooking">
+                      <a href="booking.html">Book Tour</a>  
+                    </button>
+                </div>
+        </article>
+       </div>
+      <footer>
+        <p id="contact">45 Marsh Grass Ln. <img src="images/flourish.gif" width="16" height="16" alt="" /> Marble, MN 55764 <img src="images/flourish.gif" width="16" height="16" alt="" /> (218) 555-5253</p>
+      </footer>
+    </div>
+  </body>
+</html>

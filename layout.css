@@ -1,0 +1,335 @@
+
+* {
+  box-sizing: border-box;
+}
+article, audio, body, dd, div, dl, dt, figcaption, figure, footer, h1, h2, h3, li, nav, object, ol, p, section, table, th, td, ul, video {
+  margin: 0;
+  padding: 0;
+}
+audio, article, figure, figcaption, footer, nav, section, video {
+  display: block;
+ }
+h1, h2, footer {
+  text-align: center;
+}
+
+body{
+	font-family:Verdana;
+	width: 100%;
+  margin: 0 auto;
+  font-family: tahoma, arial, helvetica, sans-serif;
+  background: #ffe5e5;
+}
+body p {
+  font-size: 1em;
+}
+#box {
+  position: relative;
+  padding: 1em;
+  margin: 0 auto; 
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  }
+header{
+	background-color:#fff4ff;
+	padding:10px;
+	text-align:center;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+	background-color:#fff4ff;
+	text-align:center;
+	padding:10px;margin-top:2em;
+}
+h1 {
+  font-size: 2.25em;
+}
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+#contents{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+	
+}
+#content {
+  display: block;
+  margin-left: 10em;
+  }
+#content p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  }
+#mainnav {
+  float:left;
+  width:16%;
+  text-align:center;
+}
+#mainnav a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+#mainnav a:link {
+  padding: 6px;
+  margin-top:5px;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+#mainnav a:hover{
+	color: #800d67;
+}
+#mainnav a:visited{
+	color: rgb(201, 16, 16);
+}
+#mainnav li {
+  list-style-type: none;
+  padding: 0em 0em 0em 0.25em;
+  margin: 0.25em 0;
+  background: #ffffa3;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid #666;
+  border-right: 2px solid #777;
+
+}
+
+#mainnav ul {
+  margin-top: 10px;
+  padding-left: 5px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: 2;
+  }
+.group {
+  padding: 0;
+  margin: 1em 0 0 2em;
+  font-weight: bold;
+  }
+.desc {
+  padding: 0;
+  margin: 1em 0 0 2em;
+  }
+.youtube{
+  align-items: center;
+  margin: 1em 0 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.devil{
+  align-items: center;
+  float: left;
+  margin: 0 0 0.5em 1em;
+  text-align: center;
+  position: relative;
+}
+
+iframe {
+  max-width: 100%;
+}
+img {
+  border: none;
+  margin: 0 auto;
+  }
+li img {
+  position: absolute;
+  left: -25px; 
+  top: -5px;
+  }
+.homeimg{
+  position: absolute;
+  left: -32px; 
+  top: -20px;
+}
+nav {
+    font-size: 1.25em;
+}
+nav ul {
+    margin-left: 0;
+  }
+nav p {
+  text-align: center;
+  }
+.toplink {
+  text-align: right;
+  padding: 0 1em 0.25em 0;
+  margin: 0;
+  clear: both;
+  }
+#pagenav {
+  color: white;
+  background: #ff99cc;
+  margin: 0;
+  padding: 0.25em;
+  }
+#pagenav a:link {
+  color: white;
+  }
+#pagenav a:visited {
+  color: #e0c1ff;
+  }
+#pagenav a:hover {
+  color: #bf7fff;
+  }
+#pagenav a:active {
+  color: white;
+  }
+
+.main {
+  width:60%;
+  padding:0 20px;
+  position: absolute; 
+  top: 85%; /* 画像の中央に配置 */
+  left: 50%; /* 画像の中央に配置 */
+  transform: translate(-50%, -50%); 
+  padding: 10px;
+	z-index: 2;
+	font-style: italic;
+  color: #fff;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+figcaption {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 0.5em 0;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.6);
+}
+figure {
+    float: right;
+    margin: 0 0 0.5em 1em;
+    text-align: center;
+    position: relative;
+}
+.contact{
+  display: table;
+}
+
+.homeflinders{
+  position: relative;
+	z-index: 1;
+  background-color: #666;
+  margin-top:0.5em;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+}
+
+th{
+  font-size: 20px;
+
+}
+
+ .video{   /*youtubevideo at home */
+  width: 560px;
+}
+
+#boxgrid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 15px;
+}
+
+.grid-item img {
+    display: block; /* Ensure the image is treated as a block element */
+    width: 100%;
+  }
+
+.jsondata{
+  font-style: italic;
+}
+
+.itinerarytable {
+  border-collapse: collapse; /* ボーダーを結合し、シンプルなスタイルにする */
+  width: 100%; /* テーブルを親要素に合わせる */
+  margin-top: 20px;
+}
+
+.itinerarytable, td {
+  border: 1px solid #ccc; /* ボーダーの幅と色を設定 */
+  padding: 8px; /* セル内の余白を設定 */
+  text-align: left; /* テキストを左寄せに設定 */
+}
+
+th {
+  background-color :#ffffdb; /* ヘッダー行の背景色を設定 */
+  text-align: center;
+}
+
+.tablecolumn1{
+  background-color : #f9ffff;
+  text-align: center;
+}
+
+.itinerarytable2 {
+  border-collapse: collapse; /* ボーダーを結合し、シンプルなスタイルにする */
+  width: 70%; /* テーブルを親要素に合わせる */
+  margin-top: 20px;
+}
+
+.fortable2{
+  width: 40%;
+}
+
+.makebooking{
+padding: 1em;
+margin: 1em;
+background: #dc4343;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+width: 10em;
+border-color: #800d67;
+border: 2px solid grey;
+cursor: pointer;
+
+}
+
+.makebooking a{
+text-decoration: none;
+font-size: 22px;
+color: #ffffff;
+}
+
+.bookingcountainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingtable{
+  width: 400px;
+}
+
+form{
+  margin-bottom: 2em;
+}
+
